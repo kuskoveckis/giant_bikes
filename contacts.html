@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giant&reg; Official Site in the UK,world's largest manufacturer of mens bikes</title>
+    <link rel="icon" href="assets/titlelogo16.png">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <script>
+        var classEl = document.getElementsByClassName('arr');
+        
+        window.onload= function() {
+            document.getElementById('contacts').addEventListener('click', function() {
+                var name = document.createElement("input");
+                name.setAttribute("type", "text");
+                name.setAttribute("value", "Name");
+                name.setAttribute("id", "name");
+                name.setAttribute("class", "arr");
+                name.style.display = "none";
+                document.getElementById('paragraf').appendChild(name);
+                var email = document.createElement("input");
+                email.setAttribute("type", "email");
+                email.setAttribute("value", "Email address");
+                email.setAttribute("id", "email");
+                email.setAttribute("class", "arr");
+                email.style.display = "none";
+                document.getElementById('paragraf').appendChild(email);
+                var par = document.createElement("p");
+                par.setAttribute("id", "par");
+                par.setAttribute("class", "arr");
+                par.innerHTML = "Question";
+                par.style.display = "none";
+                document.getElementById('paragraf').appendChild(par);
+                var txt = document.createElement("textarea");
+                txt.setAttribute("rows", "5");
+                txt.setAttribute("cols", "95");
+                txt.setAttribute("id", "txt");
+                txt.setAttribute("class", "arr");
+                txt.style.display = "none";
+                document.getElementById('paragraf').appendChild(txt);
+                var conteiner = document.createElement("div");
+                conteiner.setAttribute("id", "btnCont");
+                conteiner.setAttribute("class", "arr");
+                conteiner.style.display = "none";
+                document.getElementById('paragraf').appendChild(conteiner);
+                var btn = document.createElement("p");
+                btn.setAttribute("id", "formBtn");
+                btn.setAttribute("class", "arr");
+                btn.innerHTML = "SEND";
+                document.getElementById('btnCont').appendChild(btn);
+                
+                if(document.getElementById("name").style.display == "none" && document.getElementById("email").style.display == "none" && document.getElementById("txt").style.display == "none" && document.getElementById("par").style.display == "none" && document.getElementById("btnCont").style.display == "none") {
+                    document.getElementById('name').style.display = "block";
+                    document.getElementById("email").style.display = "block";
+                    document.getElementById("par").style.display = "block";
+                    document.getElementById("txt").style.display = "block";
+                    document.getElementById("btnCont").style.display = "block";
+                } else {
+                    document.getElementById('name').style.display = "none";
+                    document.getElementById("email").style.display = "none";
+                    document.getElementById("par").style.display = "none";
+                    document.getElementById("txt").style.display = "none";
+                    document.getElementById("btnCont").style.display = "none";
+                    
+                }
+                
+            });
+        }
+    </script>
+</head>
+
+<body id="initial">
+ <header>
+     <div class="container-top">
+         <div class="logo-liv"><a href="#liv"><img src="assets/Liv-Logo-New.png"></a></div>
+         <nav class="navbar-top">
+             <ul>
+                 <li><a href="#accont">my account</a></li>
+                 <li><a href="#cart"></a></li>
+                 <li><a href="#account">united kingdom</a></li>
+             </ul>
+         </nav>
+     </div>
+     <div class="container-bottom">
+         <div class="logo-giant"><a href="index.html"><img src="assets/Giant-Logo-New%20copy.png"></a></div>
+         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+         <label for="nav-toggle" class="nav-toggle-label">
+             <span></span>
+         </label>
+         <nav class="navbar-bottom">
+             <ul>
+                 <li><a href="#bikes" id="fullSizeMenu">bikes</a></li>
+                 <li><a href="#gear">gear</a></li>
+                 <li><a href="#support">support</a></li>
+                 <li><a href="#retailers">retailers</a></li>
+                 <li><a href="#sale">sale</a></li>
+                 <li class="mobile"><a href="#search">search</a></li>
+                 <li class="mobile"><a href="#account">my account</a></li>
+                 <li class="mobile"><a href="#location">select your location</a></li>
+             </ul>
+             <div class="brand-liv">
+                 shop our brands:<br>
+                 <a href="#liv"><img src="assets/Liv-Logo-New.png"></a>
+             </div>
+             <div class="search-btn" onclick="search()"><img src="assets/search-3-24.png" onclick="search()"></div>
+         </nav>
+     </div>
+     <div class="dropdown" id="menjushka">
+         <ul class="road">
+             <h3>Road Bikes</h3>
+             <li><a href="#fullsuspension">Performance Racing</a></li>
+             <li><a href="#hardtail">Triathlon</a></li>
+             <li><a href="#29">Fitness</a></li>
+             <li><a href="#27">City Hybrid</a></li>
+             <li><a href="#26">Folding</a></li>
+             <li><a href="#electric">Electric Road Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="mountain">
+             <h3>Mountain Bikes</h3>
+             <li><a href="#fullsuspension">Full Suspension</a></li>
+             <li><a href="bikes.html">Hardtail</a></li>
+             <li><a href="#29">29"</a></li>
+             <li><a href="#27">27.5"</a></li>
+             <li><a href="#26">26"</a></li>
+             <li><a href="#electric">Electric Mountain Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="gravel">
+             <h3>Gravel Cross Bikes</h3>
+             <li><a href="#fullsuspension">Gravel</a></li>
+             <li><a href="#hardtail">Cyclocross</a></li>
+             <li><a href="#29">Adventure Bikes</a></li>
+             <li><a href="#27">Electric Adventure Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="electric">
+             <h3>Electric Bikes</h3>
+             <li><a href="#fullsuspension">Electric Road Bikes</a></li>
+             <li><a href="#hardtail">Electric Mountain Bikes</a></li>
+             <li><a href="#29">Electric Adventure Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="kids">
+             <h3>Kids Bikes</h3>
+             <li><a href="#fullsuspension">2-6 Years (12"/16")</a></li>
+             <li><a href="#hardtail">5-9 Years (20")</a></li>
+             <li><a href="#29">7-12 Years (24")</a></li>
+             <li><a href="#27">10-16 Years (26")</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+     </div>
+ </header>
+ 
+<main>
+    <div class="container-contact" id="paragraf">
+        <h1>CONTACT</h1>
+        <p>
+            For orders at a Giant retailer, please contact you retailer.<br>
+            For weborders contact us at <span class="bold">Freephone 0800 0159 110</span>,
+            reply to your confirmation mail or fillout our <a href="#" id="contacts">contact form</a>.
+        </p>
+        <br>
+        <p>
+            Please note we are unable to assist with mechanical issues without being able to
+            physically assess the bicycle - please visit your local Giant retailer who will
+            be able to assist you in resolving the issue.
+        </p>
+    </div>
+</main>
+<footer>
+     <div class="social">
+         <h3>social</h3>
+         <button>Newsletter Sign Up</button>
+     </div>
+     <div class="features">
+         <h3>features</h3>
+         <a href="#">news</a>
+         <a href="#">events</a>
+         <a href="#">technology</a>
+         <a href="#">team &amp; riders</a>
+         <a href="#">find a giant retailer</a>
+         <a href="#">wallpapers</a>
+     </div>
+     <div class="support">
+         <h3>support</h3>
+         <a href="#">contact</a>
+         <a href="#">helmet crash replacement</a>
+         <a href="#">bike archive</a>
+         <a href="#">newsletter</a>
+         <a href="#">register your bike</a>
+         <a href="#">terms &amp; conditions of sale</a>
+         <a href="#">home delivery</a>
+         <a href="#">returns &amp; cancellations procedure</a>
+         <a href="#">competition terms &amp; conditions</a>
+         <a href="#">giant cycle to work</a>
+     </div>
+     <div class="company">
+         <h3>company</h3>
+         <a href="#">about giant bicycles</a>
+         <a href="#">privacy policy</a>
+         <a href="#">cookie policy</a>
+         <a href="#">job openings</a>
+         <a href="#">global website</a>
+         <a href="#">modern slavery statement</a>
+     </div>
+     <div class="address">
+         <p>Giant UK &verbar; Charnwood Edge &verbar; Cossington &verbar; LE7 4UZ GB &verbar; 0800 0159 110 &verbar; webshop@giant-bicycles.co.uk</p>
+     </div>
+
+ </footer>
+ <script src="javascript/application.js"></script>
+</body>
+</html>

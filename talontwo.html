@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giant&reg; Official Site in the UK,world's largest manufacturer of mens bikes</title>
+    <link rel="icon" href="assets/titlelogo16.png">
+    <link rel="stylesheet" href="style/stylesheet.css">
+    <link rel="stylesheet" href="style/talonhome.css">
+    <link rel="stylesheet" href="style/talontwo.css">
+    <script>
+        function searchField() {
+            var newDiv = document.createElement("div");
+            var searchInput = document.createElement("input");
+            searchInput.setAttribute("type", "text");
+            searchInput.setAttribute("value", "Type to start search:");
+            newDiv.appendChild(searchInput);
+            var head = document.getElementById("vopros");
+            head.appendChild(newDiv);
+        }
+
+        window.onload = function() {
+            document.getElementById("srcImg").onclick = searchField;
+        }
+        
+        
+
+        function measurments() {
+            var measInMm = [440, 490, 535, 73.5, 73.5, 73.5, 599, 622, 646, 105, 124, 140, 69, 69, 69,
+                46, 46, 46, 94, 94, 94, 1132, 1157, 1182, 455, 455, 455, 55, 55, 55,
+                611, 629, 643, 418, 435, 455, 760, 798, 833, 780, 780, 780, 60, 70, 80,
+                175, 175, 175, 29, 29, 29
+            ];
+            var resultCells = document.getElementById("tablica-content").getElementsByTagName("td");
+
+            for (let i = 0; i < measInMm.length; i++) {
+                var result = measInMm[i];
+                resultCells[i].innerHTML = result;
+            }
+        }
+
+        
+        function measurmentsTwo() {
+            var measInMm2 = [10000, 80000, 535, 73.5, 73.5, 73.5, 599, 622, 646, 105, 124, 140, 69, 69, 69,
+                46, 46, 46, 94, 94, 94, 1132, 1157, 1182, 455, 455, 455, 55, 55, 55,
+                611, 629, 643, 418, 435,1816181, 760, 798, 833, 780, 780, 780, 60, 70, 80,
+                175, 175, 175, 29, 29, 29
+            ];
+            var resultCells2 = document.getElementById("tablica-content").getElementsByTagName("td");
+
+            for (let i = 0; i < measInMm2.length; i++) {
+                var result = measInMm2[i];
+                resultCells2[i].innerHTML = result;
+            }
+        }
+
+        window.onload = function() {
+            document.getElementById("sp1").onclick = measurments;
+            document.getElementById("sp2").onclick = measurmentsTwo;
+        }
+    </script>
+</head>
+
+<body id="initial">
+ <header id="vopros">
+     <div class="container-top">
+         <div class="logo-liv"><a href="#liv"><img src="assets/Liv-Logo-New.png"></a></div>
+         <nav class="navbar-top">
+             <ul>
+                 <li><a href="#accont">my account</a></li>
+                 <li><a href="#cart"></a></li>
+                 <li><a href="#account">united kingdom</a></li>
+             </ul>
+         </nav>
+     </div>
+     <div class="container-bottom">
+         <div class="logo-giant"><a href="index.html"><img src="assets/Giant-Logo-New%20copy.png"></a></div>
+         <input type="checkbox" id="nav-toggle" class="nav-toggle">
+         <label for="nav-toggle" class="nav-toggle-label">
+             <span></span>
+         </label>
+         <nav class="navbar-bottom">
+             <ul>
+                 <li><a href="#bikes" id="fullSizeMenu">bikes</a></li>
+                 <li><a href="#gear">gear</a></li>
+                 <li><a href="#support">support</a></li>
+                 <li><a href="#retailers">retailers</a></li>
+                 <li><a href="#sale">sale</a></li>
+                 <li class="mobile"><a href="#search">search</a></li>
+                 <li class="mobile"><a href="#account">my account</a></li>
+                 <li class="mobile"><a href="#location">select your location</a></li>
+             </ul>
+             <div class="brand-liv">
+                 shop our brands:<br>
+                 <a href="#liv"><img src="assets/Liv-Logo-New.png"></a>
+             </div>
+             <div class="search-btn" id="srcBtn"><img id="srcImg" src="assets/search-3-24.png"></div>
+         </nav>
+     </div>
+     <div class="dropdown" id="menjushka">
+         <ul class="road">
+             <h3>Road Bikes</h3>
+             <li><a href="#fullsuspension">Performance Racing</a></li>
+             <li><a href="#hardtail">Triathlon</a></li>
+             <li><a href="#29">Fitness</a></li>
+             <li><a href="#27">City Hybrid</a></li>
+             <li><a href="#26">Folding</a></li>
+             <li><a href="#electric">Electric Road Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="mountain">
+             <h3>Mountain Bikes</h3>
+             <li><a href="#fullsuspension">Full Suspension</a></li>
+             <li><a href="bikes.html">Hardtail</a></li>
+             <li><a href="#29">29"</a></li>
+             <li><a href="#27">27.5"</a></li>
+             <li><a href="#26">26"</a></li>
+             <li><a href="#electric">Electric Mountain Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="gravel">
+             <h3>Gravel Cross Bikes</h3>
+             <li><a href="#fullsuspension">Gravel</a></li>
+             <li><a href="#hardtail">Cyclocross</a></li>
+             <li><a href="#29">Adventure Bikes</a></li>
+             <li><a href="#27">Electric Adventure Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="electric">
+             <h3>Electric Bikes</h3>
+             <li><a href="#fullsuspension">Electric Road Bikes</a></li>
+             <li><a href="#hardtail">Electric Mountain Bikes</a></li>
+             <li><a href="#29">Electric Adventure Bikes</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+         <ul class="kids">
+             <h3>Kids Bikes</h3>
+             <li><a href="#fullsuspension">2-6 Years (12"/16")</a></li>
+             <li><a href="#hardtail">5-9 Years (20")</a></li>
+             <li><a href="#29">7-12 Years (24")</a></li>
+             <li><a href="#27">10-16 Years (26")</a></li>
+             <li><a href="#all">View All</a></li>
+         </ul>
+     </div>
+ </header>
+ <main>
+    <div class="brov"></div>
+    
+    <div class="bike-selection">
+    <div class="photo-frame">
+            <iframe class="cell" name="full-size" width="1000" height="594"
+                src="assets/bikes/talon/talon2/MY20_Talon_29_tech.jpg"></iframe>  
+            <nav class="cell">
+                <a href="assets/bikes/talon/talon2/MY20_Talon_29_tech.jpg" target="full-size">
+                    <img src="assets/bikes/talon/talon2/MY20_Talon_29_tech%20thumbnail.jpg"></a>
+                <a href="assets/bikes/talon/talon2/Talon292MGrey-Silver-01787.jpg" target="full-size">
+                    <img src="assets/bikes/talon/talon2/Talon292MGrey-Silver-01787%20thumbnail.jpg">
+                </a>
+                <a href="assets/bikes/talon/talon2/Talon292MGrey-Silver-01783.jpg" target="full-size">
+                    <img src="assets/bikes/talon/talon2/Talon292MGrey-Silver-01783%20thumbnail.jpg">
+                </a>
+                <a href="assets/bikes/talon/talon2/Talon292MGrey-Silver-01793.jpg" target="full-size">
+                    <img src="assets/bikes/talon/talon2/Talon292MGrey-Silver-01793%20thumbnail.jpg">
+                </a>
+                <a href="assets/bikes/talon/talon2/Talon292MGrey-Silver-01782.jpg" target="full-size">
+                    <img src="assets/bikes/talon/talon2/Talon292MGrey-Silver-01782%20thumbnail.jpg">
+                </a>
+            </nav>   
+    </div>
+    
+    <div class="size-selector">
+        <div class="categories">
+            <a href="bikes.html">Bikes&nbsp;&nbsp;</a>
+            <div>>&nbsp;</div>
+            <a href="talonhome.html">Talon 29</a>
+        </div>
+        <h1>talon 29 2</h1>
+        <h3 class="gray">2020</h3>
+        <div class="reviews">No reviews / <a href="#">Write the First Review</a></div>
+        <div class="price">$599</div>
+        <div class="gray" id="small">
+            or from $99.83 per month 0% APR
+        </div>
+        <select id="size">
+            <option>Select your size</option>
+            <option>Select your size</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+        </select>
+        <div class="gray" id="question"><a href="#">What is my size?</a></div>
+        <div class="dark-gray">SHARE</div>
+        <div class="social-media"></div>
+    </div>
+    </div>
+    
+    <div class="advert-white">
+        <div class="delivery">
+            <h4>Free Home Delivery</h4>
+            <p>On Selected models</p>
+        </div>
+        <div class="returns">
+            <h4>Free returns</h4>
+            <p>Within 28 days</p>
+        </div>
+        <div class="finance">
+            <h4>0% Finance Available</h4>
+            <p>Starting from $150+</p>
+        </div>
+    </div>
+    
+    <div class="bikes-navbar-talon">
+         <div class="models">
+             <a href="">specs</a>
+         </div>
+         <div class="highlights">
+             <a href="">highlights</a>
+         </div>
+         <div class="gallery">
+             <a href="">geometry</a>
+         </div>
+         <div class="technology">
+             <a href="">technologies</a>
+         </div>
+         <div class="roundview">
+             <a href="">similar products</a>
+         </div>
+         <div class="roundview">
+             <a href="">you may also like</a>
+         </div>
+     </div>
+     
+     <div class="performance-facts">
+         <p class="bold">
+             Get a feel for the trail with this aluminium hardtail made for aspiring singletrack riders. It features stable, fast-rolling 29-inch wheels so you can push the pace on climbs and
+             let loose on the descents.
+         </p>
+         <p>
+             Built on a lightweight ALUXX aluminium frame that features classic hardtail design plus 
+             the balanced riding characteristics of larger diameter 29-inch wheels, Talon 29er is
+             a great choice for XC terrain. The frame geometry is specifically designed for its wheel size a 100mm suspension fork. It;s a confident ride that's perfect for ambitious riders
+             who want to take their off-road skills to the next level.
+         </p>
+         <h1><span>KEY PERFORMANCE FACTORS</span></h1>
+         <div class="column">
+             <div>
+                 <h3>
+                     Proven alloy performance
+                 </h3>
+                 <p>
+                     ALUXX SL aluminium frameset is hand-built in-house by the world leader
+                     in aluminium engineering.
+                 </p>
+             </div>
+             <div>
+                 <h3>
+                     Balance and stability
+                 </h3>
+                 <p>
+                     Frame geometry is designed to optimise the balance and roll-over capabilities
+                     of 29-inch wheels.
+                 </p>
+             </div>
+             <div>
+                 <h3>
+                     XC control
+                 </h3>
+                 <p>
+                     Suspnesion fork offers 100mm of smooth travel for added XC control.
+                 </p>
+             </div>
+         </div>
+     </div>
+     
+     <div class="harakteristiki">
+         <div id="levo">
+             <div>
+                 <p>Sizes</p>
+                 <p>M, L, XL</p>
+             </div>
+             <div>
+                 <p>Colours</p>
+                 <p>Gloss Grey</p>
+             </div>
+             <div>
+                 <p>Frame</p>
+                 <p>ALUXX-Grade Aluminum, disc</p>
+             </div>
+             <div>
+                 <p>Fork</p>
+                 <p>RockShox XC 30, coil spring, preload adjust, TurnKey hydraulic lockout</p>
+             </div>
+             <div>
+                 <p>Shock</p>
+                 <p>N/A</p>
+             </div>
+             <div>
+                 <p>Handlebar</p>
+                 <p>Giant Connect Trail, 780x31.8</p>
+             </div>
+             <div>
+                 <p>Stem</p>
+                 <p>Giant Sport, 7-degree</p>
+             </div>
+             <div>
+                 <p>Seatpost</p>
+                 <p>Giant Sport, 30.9</p>
+             </div>
+             <div>
+                 <p>Saddle</p>
+                 <p>Giant custom</p>
+             </div>
+             <div>
+                 <p>Pedals</p>
+                 <p>platform</p>
+             </div>
+             <div>
+                 <p>Shifters</p>
+                 <p>Shimano Acera</p>
+             </div>
+             <div>
+                 <p>Front Derailleur</p>
+                 <p>Shimano Alivio</p>
+             </div>
+             <div>
+                 <p>Rear Derailleur</p>
+                 <p>Shimano Alivio</p>
+             </div>
+             <div>
+                 <p>Brakes</p>
+                 <p>Tektro HDC M275, hydraulic disc</p>
+             </div>
+         </div>
+         <div id="pravo">
+             <div>
+                 <p>Brake Levers</p>
+                 <p>Tektro HDC M275</p>
+             </div>
+             <div>
+                 <p>Cassette</p>
+                 <p>Shimano CS-HG200-9, 11x36</p>
+             </div>
+             <div>
+                 <p>Chain</p>
+                 <p>KMC X9</p>
+             </div>
+             <div>
+                 <p>Crankset</p>
+                 <p>Shimano FC-MT101, 22/36</p>
+             </div>
+             <div>
+                 <p>Bottom Bracket</p>
+                 <p>Shimano</p>
+             </div>
+             <div>
+                 <p>Rims</p>
+                 <p>Giant GX03V 29", alloy, double wall, 21mm inner width</p>
+             </div>
+             <div>
+                 <p>Hubs</p>
+                 <p>[F]Giant Tracker Giant Sport QR, loose ball
+                    [R]Giant Tracker Giant Sport QR, loose ball 
+                 </p>
+             </div>
+             <div>
+                 <p>Spokes</p>
+                 <p>stainless, 14g</p>
+             </div>
+             <div>
+                 <p>Tyres</p>
+                 <p>Maxxis Ikon 29x2.2, wire bead</p>
+             </div>
+             <div>
+                 <p>Weight</p>
+                 <p>13.5kg (size M)</p>
+             </div>
+         </div>
+         <div id="centr">
+            <p>Every effort has been made to ensure accuracy throughout this website.
+             However, Giant reserves the right to change bike specifications, features,
+             prices and colours without prior notice.
+            </p>
+         </div>
+     </div>
+     
+     <div class="bike-two">
+         <h1>highlights</h1>
+         <p>
+             Built on a lightweight ALUXX aluminium frame that features classic hardtail design 
+             plus the balanced riding characteristics of larger diameter 29-inch wheels, Talon
+             is a great choice for XC terrain. The frame geometry is specifically designed for
+             it;s size and a 100mm suspension fork. It's a confident ride that's perfect for
+             ambitious riders who want to take their off-road skills to the next level.
+         </p>
+     </div>
+    <div class="konteiner">
+        <div class="container"></div>
+    </div>
+    
+    <div class="shema">
+       <h1>geometry</h1>
+       <img src="assets/bikes/talon/talon2/giant-offroad-geo.png">
+    </div>
+    
+    <div class="tablica">
+       <div class="buttons">
+           <div>
+               <span id="sp1" >mm</span>
+               <span id="sp2">inches</span>
+           </div>
+       </div>
+        <div class="tablica-content" id="tablica-content">
+            <table>
+               <thead>
+                   <tr>
+                       <th></th>
+                       <th>M</th>
+                       <th>L</th>
+                       <th>XL</th>
+                   </tr>
+               </thead>
+               <tbody>
+                   <tr>
+                       <th>seat tube length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                       
+                   </tr>
+                    <tr>
+                       <th>seat tube angle</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                    <tr>
+                       <th>top tube length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                     <tr>
+                       <th>head tube length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>head tube angle</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>fork rake</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>trail</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>wheelbase</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>chain stay length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>bottom bracket drop</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>stack</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>reach</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>stand over height</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>handlebar width</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>stem length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>crank length</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+                   <tr>
+                       <th>wheel size</th>
+                       <td></td>
+                       <td></td>
+                       <td></td>
+                   </tr>
+               </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="technologies">
+        <h1>technologies</h1>
+        <a href="#allux"><img src="assets/bikes/talon/Aluxx_1508267313.jpg"></a>
+        <figcaption>ALLUX</figcaption>
+    </div>
+     
+ </main>
+ <footer>
+     <div class="social">
+         <h3>social</h3>
+         <button>Newsletter Sign Up</button>
+     </div>
+     <div class="features">
+         <h3>features</h3>
+         <a href="#">news</a>
+         <a href="#">events</a>
+         <a href="#">technology</a>
+         <a href="#">team &amp; riders</a>
+         <a href="#">find a giant retailer</a>
+         <a href="#">wallpapers</a>
+     </div>
+     <div class="support">
+         <h3>support</h3>
+         <a href="#">contact</a>
+         <a href="#">helmet crash replacement</a>
+         <a href="#">bike archive</a>
+         <a href="#">newsletter</a>
+         <a href="#">register your bike</a>
+         <a href="#">terms &amp; conditions of sale</a>
+         <a href="#">home delivery</a>
+         <a href="#">returns &amp; cancellations procedure</a>
+         <a href="#">competition terms &amp; conditions</a>
+         <a href="#">giant cycle to work</a>
+     </div>
+     <div class="company">
+         <h3>company</h3>
+         <a href="#">about giant bicycles</a>
+         <a href="#">privacy policy</a>
+         <a href="#">cookie policy</a>
+         <a href="#">job openings</a>
+         <a href="#">global website</a>
+         <a href="#">modern slavery statement</a>
+     </div>
+     <div class="address" id="poslednee">
+         <p>Giant UK &verbar; Charnwood Edge &verbar; Cossington &verbar; LE7 4UZ GB &verbar; 0800 0159 110 &verbar; webshop@giant-bicycles.co.uk</p>
+     </div>
+
+ </footer>
+ <script src="javascript/application.js"></script>
+</body>
+</html>     
